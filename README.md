@@ -35,19 +35,18 @@ Getting Started
 - Download the INRIA dataset from http://pascal.inrialpes.fr/data/human/
 
 - Navigate to Release folder and run as follows
+> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m -1 -gt groundtruthDir (This will run default OpenCV HOG model)
+
+> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDiri (This will run self-trained OpenCV HOG model)
+
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
 
  > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
 
 Detections are generated in the directory Outputs. 
 V000.txt registers all detections in a format that can then be used by
-Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves. See Analysis folder for more details
+Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves as shown below. See Analysis folder for more details
 
-- To run OpenCV HOG model
-> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m -1 -gt groundtruthDir
-
-- To run self-trained OpenCV HOG model
-> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDir
 
 ![Evaluation Plot](https://github.com/siddadd/HOGSim2/blob/master/Analysis/plots/InriaTestRoc.png)
 
