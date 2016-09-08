@@ -49,7 +49,7 @@ Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves. See Analysi
 - To run self-trained OpenCV HOG model
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDir
 
-![alt tag](https://github.com/siddadd/HOGSim2/plots/InriaTestRoc.png)
+![alt tag](https://github.com/siddadd/HOGSim2/Analysis/plots/InriaTestRoc.png)
 
 ----------------
 Dependencies
