@@ -1,4 +1,4 @@
-# HOGSim
+# HOGSim2
 Source code based on the paper titled 'A scalable architecture for multi-class visual object detection' that was published in FPL 2015.
 Paper available at http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7293961
 
@@ -19,9 +19,9 @@ Contents
 
 This code package contains the following files:
 
-- HoG_Test_Vehicle.cpp is the code that runs the hardware model (proposed in FPL 2015) on the INRIA Benchmark
+- HoG_Test_Vehicle.cpp is the code that runs the hardware models (proposed in FPL 2015) on the INRIA Benchmark
 
-- We also provide a switch to run the original OpenCV HOG model for comparison purposes. 
+- We also provide switches to run the original OpenCV HOG model and a self-trained OpenCV HOG model for comparison purposes. We used LibSVM for training (infrastructure to be released soon)
 
 ----------------
 Getting Started
@@ -35,13 +35,17 @@ Getting Started
 - Download the INRIA dataset from http://pascal.inrialpes.fr/data/human/
 
 - Navigate to Release folder and run as follows
-> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir
+> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
+> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
 
 Detections are generated in the directory outputDir. 
 V000.txt registers all detections in a format that can then be used by
-Piotr Dollar's Pedestrian Detection toolkit (http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/code/code3.2.1.zip) for plotting P-R curves
+Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves. See Analysis folder for more details
 
 - To run OpenCV HOG model
+> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m -1 -gt groundtruthDir
+
+- To run self-trained OpenCV HOG model
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDir
 
 ----------------

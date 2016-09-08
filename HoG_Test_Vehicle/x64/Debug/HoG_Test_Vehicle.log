@@ -1,0 +1,4 @@
+﻿  HoG_Test_Vehicle.cpp
+HoG_Test_Vehicle.cpp(236): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+HoG_Test_Vehicle.cpp(756): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+  HoG_Test_Vehicle.vcxproj -> C:\RnD\Repos\HOGSim2\HoG_Test_Vehicle\x64\Debug\HoG_Test_Vehicle.exe
