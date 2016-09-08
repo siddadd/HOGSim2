@@ -19,7 +19,8 @@ Contents
 
 This code package contains the following files:
 
-- HoG_Test_Vehicle.cpp is the top wrapper that runs the hardware models (proposed in FPL 2015) on the INRIA Benchmark. If you want access to the hardware IP please fill out this form and we will get back to you providing you with a pathway to use the RTL. 
+- HoG_Test_Vehicle.cpp is the top wrapper that runs the hardware models (proposed in FPL 2015) on the INRIA Benchmark. If you want access to the hardware IP please fill out this 
+form (https://goo.gl/forms/q7I3nbuOl83WPmsu2) and we will get back to you providing you with a pathway to use the RTL. 
 
 - We also provide switches to run the original OpenCV HOG model and a self-trained OpenCV HOG model for comparison purposes. We used LibSVM for training (infrastructure to be released soon)
 
@@ -37,16 +38,15 @@ Getting Started
 - Navigate to Release folder and run as follows
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m -1 -gt groundtruthDir (This will run default OpenCV HOG model)
 
- > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDiri (This will run self-trained OpenCV HOG model)
+ > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDir (This will run self-trained OpenCV HOG model)
 
- > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
+ > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir (This will run HWDalal)
 
- > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
+ > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir (This will run HWPedro)
 
 Detections are generated in the directory Outputs. 
 V000.txt registers all detections in a format that can then be used by
 Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves as shown below. See Analysis folder for more details
-
 
 ![Evaluation Plot](https://github.com/siddadd/HOGSim2/blob/master/Analysis/plots/InriaTestRoc.png)
 
