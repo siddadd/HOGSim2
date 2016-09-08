@@ -37,9 +37,9 @@ Getting Started
 - Navigate to Release folder and run as follows
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m -1 -gt groundtruthDir (This will run default OpenCV HOG model)
 
-> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDiri (This will run self-trained OpenCV HOG model)
+ > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDiri (This will run self-trained OpenCV HOG model)
 
-> HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
+ > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
 
  > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
 
@@ -54,9 +54,9 @@ Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves as shown bel
 Dependencies
 ----------------
 
-OpenCV 2.4.11 (make sure the OpenCV dlls are in the Release folder)
-Dirent 1.20.1
-hwHOGDll (see lib folder)
+- OpenCV 2.4.11 (make sure the OpenCV dlls are in the Release folder)
+- Dirent 1.20.1
+- hwHOGDll (see lib folder)
 
 ----------------
 License
