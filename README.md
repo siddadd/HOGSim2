@@ -64,3 +64,8 @@ License
 
 This code is published under the MIT License.
 
+----------------
+Contact 
+----------------
+
+Send feedback, suggestions and questions to Siddharth Advani at siddharth(dot)advani(at)ieee(dot)org
