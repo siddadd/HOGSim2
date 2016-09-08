@@ -36,6 +36,7 @@ Getting Started
 
 - Navigate to Release folder and run as follows
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 1 -gt groundtruthDir  (This will run HWDalal)
+
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
 
 Detections are generated in the directory outputDir. 
