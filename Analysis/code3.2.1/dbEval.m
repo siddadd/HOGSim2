@@ -28,7 +28,7 @@ function dbEval
 %  filter   - expanded filtering (see 3.3 in PAMI11)
 
 % ska - 08/12/2015
-displayscoresonplot = 1;
+displayscoresonplot = 0;
 
 exps = {
   'Reasonable',     [50 inf],  [.65 inf], 0,   .5,  1.25
@@ -113,7 +113,7 @@ algs = {
         % Baselines
         %'MATLAB-ToolBox',    1, clrs(1,:), '-'
         'OpenCV',            1, clrs(2,:), '-'   
-        'HOG',               1, clrs(3,:), '-'                
+        %'HOG',               1, clrs(3,:), '-'                
         %'Felzen',            1, clrs(4,:), '-'
         
         % Our Training
