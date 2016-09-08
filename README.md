@@ -39,7 +39,7 @@ Getting Started
 
  > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 2 -gt groundtruthDir  (This will run HWPedro)
 
-Detections are generated in the directory outputDir. 
+Detections are generated in the directory Outputs. 
 V000.txt registers all detections in a format that can then be used by
 Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves. See Analysis folder for more details
 
@@ -48,6 +48,8 @@ Piotr Dollar's Pedestrian Detection toolkit for plotting P-R curves. See Analysi
 
 - To run self-trained OpenCV HOG model
 > HoG_Test_Vehicle.exe -i inputDir -o outputDir -m 0 -gt groundtruthDir
+
+![alt tag](https://github.com/siddadd/HOGSim2/plots/InriaTestRoc.png)
 
 ----------------
 Dependencies
